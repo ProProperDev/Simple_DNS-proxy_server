@@ -17,7 +17,7 @@
 #define DEFAULT_LOCAL_PORT  53
 #define MAX_BUF_SIZE 65536
 
-const int   SENIOR_SERV_PORT = DEFAULT_LOCAL_PORT;
+const int SENIOR_SERV_PORT = DEFAULT_LOCAL_PORT;
 char* SENIOR_SERV_ADDR;
 
 const int   LISTEN_PORT = 12345; // стнд. порт 53; 12345 порт устанавливаем для проверки
