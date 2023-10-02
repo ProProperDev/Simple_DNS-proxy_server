@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <stdbool.h>
 
-#include "functions.h"
+#include "net_functions.h"
 #include "set.h"
 #include "load_config.h"
 #include "dns_packet.h"

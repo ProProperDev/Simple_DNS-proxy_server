@@ -6,7 +6,7 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 
-#include "functions.h"
+#include "net_functions.h"
 
 int create_socket(int domain, int type, int protocol) {
     int result = socket(domain, type, protocol);
