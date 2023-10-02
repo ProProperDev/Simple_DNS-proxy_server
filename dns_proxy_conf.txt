@@ -1,0 +1,12 @@
+# Структуру и методы чтения конфигурационного файла надо переделать в JSON формат
+# Данная структура файла толлько для теста 
+# set the address of the senior dns server
+SENIOR_SERV_ADDR = 8.8.8.8
+# set the return value for blocked domains
+RDATA_FOR_BLOCK = 0.0.0.0
+# set the black list of domain names :
+www.example.com
+www.very.blacklist.com
+www.badnetwork.net
+www.test.fail.net
+www.tesla.com
