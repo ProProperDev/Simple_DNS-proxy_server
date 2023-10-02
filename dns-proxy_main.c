@@ -20,7 +20,7 @@
 const int SENIOR_SERV_PORT = DEFAULT_LOCAL_PORT;
 char* SENIOR_SERV_ADDR;
 
-const int LISTEN_PORT = 12345; // стнд. порт 53; 12345 порт устанавливаем для проверки
+const int LISTEN_PORT = 12345; // DEFAULT_LOCAL_PORT(стнд. порт 53); 12345 порт устанавливаем для проверки
 unsigned long LISTEN_ADDR = INADDR_ANY; // Принимаем запросы от любого ip
 
 char* CONFIG_FILE = "dns_proxy_conf.txt";
