@@ -67,9 +67,9 @@ int main( int argc , char *argv[]) {
 
         printf("\nWaiting message...\n");
 
-        ssize_t msg_recv_bytes = recvive_from(udp_listen_socket, (char*)&buffer, sizeof(buffer),
+        ssize_t msg_recv_bytes = receive_from(udp_listen_socket, (char*)&buffer, sizeof(buffer),
                                               0,(struct sockaddr*)&client_addr , &client_addr_size);
-        printf("Message from client recieved! Bytes recieved: %ld\n", msg_recv_bytes);
+        printf("Message from client recieved! Bytes received: %ld\n", msg_recv_bytes);
         
         char* query_domain = parse_name_from_dnsquery(buffer);
         printf("DNS request from client for \"%s\"\n", query_domain);

@@ -28,7 +28,7 @@ void bind_socket(int sockfd, const struct sockaddr *addr, socklen_t addrlen) {
 // В этой функции, возможно, есть смысл не аварийно завершать всю программу
 // в случае ошибки,а обработать ошибку и рекурсивно вызвать опять эту же
 // функцию для получения сообщений от других клиентов (повысить устойчивость системы)
-ssize_t recvive_from(int sockfd, void *buf, size_t len, int flags,
+ssize_t receive_from(int sockfd, void *buf, size_t len, int flags,
                      struct sockaddr *src_addr, socklen_t *addrlen) {
     ssize_t recv_bytes = recvfrom(sockfd, buf, len, flags, src_addr, addrlen);    
     

@@ -14,7 +14,7 @@ int create_socket(int domain, int type, int protocol);
 
 void bind_socket(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
 
-ssize_t recvive_from(int sockfd, void *buf, size_t len, int flags,
+ssize_t receive_from(int sockfd, void *buf, size_t len, int flags,
                      struct sockaddr *src_addr, socklen_t *addrlen);
 
 ssize_t send_to(int sockfd, const void *buf, size_t len, int flags,
