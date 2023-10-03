@@ -69,7 +69,7 @@ int main( int argc , char *argv[]) {
 
         ssize_t msg_recv_bytes = receive_from(udp_listen_socket, (char*)&buffer, sizeof(buffer),
                                               0,(struct sockaddr*)&client_addr , &client_addr_size);
-        printf("Message from client recieved! Bytes received: %ld\n", msg_recv_bytes);
+        printf("Message from client received! Bytes received: %ld\n", msg_recv_bytes);
         
         char* query_domain = parse_name_from_dnsquery(buffer);
         printf("DNS request from client for \"%s\"\n", query_domain);
@@ -108,7 +108,7 @@ int main( int argc , char *argv[]) {
         memset(&buffer, '\0', sizeof(buffer)); // Очищаем buffer
 
         msg_recv_bytes = recv(tcp_frwd_socket, &buffer, sizeof(buffer), 0);
-        printf("Answer from senior DNS server recieved! Bytes received = %ld\n", msg_recv_bytes);
+        printf("Answer from senior DNS server received! Bytes received = %ld\n", msg_recv_bytes);
         
         // Закрываем сокет для связи с вышестоящим сервером 
         close(tcp_frwd_socket);
