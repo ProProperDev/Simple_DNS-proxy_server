@@ -108,7 +108,7 @@ int main( int argc , char *argv[]) {
         memset(&buffer, '\0', sizeof(buffer)); // Очищаем buffer
 
         msg_recv_bytes = recv(tcp_frwd_socket, &buffer, sizeof(buffer), 0);
-        printf("Answer from senior DNS server recieved! Bytes recieved = %ld\n", msg_recv_bytes);
+        printf("Answer from senior DNS server recieved! Bytes received = %ld\n", msg_recv_bytes);
         
         // Закрываем сокет для связи с вышестоящим сервером 
         close(tcp_frwd_socket);
