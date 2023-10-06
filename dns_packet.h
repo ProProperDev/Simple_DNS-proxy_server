@@ -9,6 +9,9 @@
 #include <arpa/inet.h> 
 #include <netinet/in.h>
 
+#define class_IN 1 // Для INTERNET
+#define IPv4_size 4 // Размер адреса IPv4
+
 /* RECORD TYPE */
 enum {
   type_A = 1,
@@ -21,9 +24,6 @@ enum {
   type_AAAA = 28,
   type_SRV = 33
 };
-
-#define class_IN 1 // Для INTERNET
-#define IPv4_size 4 // Размер адреса IPv4 
 
 struct DNS_HEADER {
     unsigned short id; // уникальный id пакета
