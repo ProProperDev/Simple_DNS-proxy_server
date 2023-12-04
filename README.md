@@ -19,7 +19,7 @@
 
         Левое окно - DNS клиент                                               Правое окно - DNS-прокси сервер
 
-![Screenshot](https://github.com/ProProperDev/Simple_DNS-proxy_server/blob/main/Screenshot1.png)
+![Screenshot](https://github.com/ProProperDev/Simple_DNS-proxy_server/blob/main/Screenshots/result_window.png)
 
 # Планы по совершенствованию
 1. Внедрить и организовать чтение конфиг файла в JSON формате.
