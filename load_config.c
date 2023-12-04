@@ -41,8 +41,8 @@ void load_config(char* file) {
             continue;
         }
 
-        if(strstr(read_line, "SENIOR_SERV_ADDR") != NULL) {
-            SENIOR_SERV_ADDR = string_value(get_value(read_line));
+        if(strstr(read_line, "UPSTREAM_SERV_ADDR") != NULL) {
+            UPSTREAM_SERV_ADDR = string_value(get_value(read_line));
            
         } else if (strstr(read_line,"RDATA_FOR_BLOCK") != NULL) {
             RDATA_FOR_BLOCK = string_value(get_value(read_line));

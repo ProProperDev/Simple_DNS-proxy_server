@@ -8,7 +8,9 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 
+#ifndef INCORRECT_VALUE
 #define INCORRECT_VALUE -1
+#endif
 
 int create_socket(int domain, int type, int protocol);
 

@@ -10,7 +10,7 @@
 
 #include "set.h"
 
-extern char* SENIOR_SERV_ADDR;
+extern char* UPSTREAM_SERV_ADDR;
 
 extern SimpleSet DOMAINS_BLACKLIST;
 
